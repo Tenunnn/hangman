@@ -1,0 +1,15 @@
+#Vsegnuud {
+  display: flex;
+  flex-wrap: wrap;
+  width: 210px;
+  position: absolute;
+  left: 1000px;
+  bottom: 200px;
+}
+#randoms {
+  display: flex;
+  position: absolute;
+  left: 1000px;
+  bottom: 300px;
+  font-size: 30px;
+}
