@@ -75,3 +75,13 @@
   visibility: hidden;
   color: white;
 }
+#Lose-Restart {
+  background-color: aquamarine;
+  width: 100px;
+  height: 30px;
+}
+#Win-Restart {
+  background-color: aquamarine;
+  width: 100px;
+  height: 30px;
+}
