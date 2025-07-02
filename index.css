@@ -1,7 +1,12 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 #Vsegnuud {
   display: flex;
   flex-wrap: wrap;
-  width: 210px;
+  width: 300px;
   position: absolute;
   left: 1000px;
   bottom: 200px;
@@ -12,4 +17,61 @@
   left: 1000px;
   bottom: 300px;
   font-size: 30px;
+}
+#pic0 {
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
+#MAIN {
+  background-image: url();
+}
+#pic1 {
+  position: absolute;
+  left: 980px;
+  bottom: 600px;
+  height: 350px;
+}
+#Fail {
+  position: absolute;
+  left: 1100px;
+  bottom: 430px;
+}
+#gameOver {
+  background: rgba(0, 0, 0, 0.5);
+  height: 100vh;
+  width: 100vw;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: absolute;
+  left: 0;
+  top: 0;
+  visibility: hidden;
+  color: white;
+}
+#lostGif {
+  height: 200px;
+  width: 200px;
+  /* font */
+}
+
+#Win {
+  background: rgba(0, 0, 0, 0.5);
+  height: 100vh;
+  width: 100vw;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: absolute;
+  left: 0;
+  top: 0;
+  visibility: hidden;
+  color: white;
 }
