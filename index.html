@@ -7,9 +7,13 @@
     <title>Document</title>
   </head>
   <body>
+    <audio id="audio" controls>
+      <source src="Glorious Morning.mp3" type="audio/mpeg" />
+      Your browser does not support the audio element.
+    </audio>
     <div id="MAIN">
       <img src="images/0.jpg" id="pic1" />
-      <img src="pic.jpg" id="pic0" alt="" />
+      <img src="pexels-njeromin-29376558.jpg" id="pic0" alt="" />
       <div id="Fail">Fail:<span>0</span></div>
       <div id="randoms"></div>
       <div id="Vsegnuud"></div>
@@ -17,13 +21,13 @@
     <div id="gameOver">
       <img id="lostGif" src="lost.gif" alt="" />
       <div>You Lost!</div>
-      <div>Word Was:</div>
+      <div>Word Was:<span id="lose-word"></span></div>
       <button id="Lose-Restart">Restart</button>
     </div>
     <div id="Win">
       <img src="victory.gif" alt="" id="winGif" />
       <div>You Win!</div>
-      <div>Word Was:</div>
+      <div>Word Was:<span id="win-word"></span></div>
       <button id="Win-Restart">Restart</button>
     </div>
   </body>

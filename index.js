@@ -34,11 +34,9 @@ const randomVgvvd = [
   "Siggagaga",
   "lassaasassa",
 ];
-
 let SelectedLetter = [];
 let pickedWord =
   randomVgvvd[Math.floor(Math.random() * randomVgvvd.length)].toUpperCase();
-
 const letterContainer = document.getElementById("Vsegnuud");
 const randoms = document.getElementById("randoms");
 const fail = document.getElementById("Fail");
@@ -47,6 +45,8 @@ let HangPic = document.getElementById("pic1");
 HangPic.src = "images/0.jpg";
 const GameOver = document.getElementById("gameOver");
 const Win = document.getElementById("Win");
+const LoseButton = document.getElementById("Lose-Restart");
+const WinButton = document.getElementById("Win-Restart");
 
 function Haragduulah() {
   letterContainer.innerHTML = "";
@@ -54,8 +54,8 @@ function Haragduulah() {
   for (let i = 0; i < letters.length; i++) {
     const button = document.createElement("button");
     button.style.backgroundColor = "blue";
-    button.style.height = "30px";
-    button.style.width = "30px";
+    button.style.height = "40px";
+    button.style.width = "40px";
     button.style.gap = "10px";
     button.style.borderRadius = "10px";
     button.innerHTML = letters[i];
@@ -88,6 +88,8 @@ function Haragduulah() {
 
           if (FailValue === 7) {
             GameOver.style.visibility = "visible";
+            FailWord = document.getElementById("lose-word");
+            FailWord.textContent = pickedWord;
           }
         }
 
@@ -116,6 +118,8 @@ function Haragduulah() {
 
         if (x === true) {
           Win.style.visibility = "visible";
+          WinWord = document.getElementById("win-word");
+          WinWord.textContent = pickedWord;
         }
       }
     });
@@ -143,7 +147,7 @@ function randomwords() {
       if (revealed) {
         hidden = hidden + char + " ";
       } else {
-        hidden = hidden + "_ ";
+        hidden = hidden + "_";
       }
     }
   }
@@ -160,8 +164,19 @@ function startGame() {
     randomVgvvd[Math.floor(Math.random() * randomVgvvd.length)].toUpperCase();
   HangPic.src = "images/0.jpg";
   fail.textContent = "Fail: 0";
+  GameOver.style.visibility = "hidden";
+  Win.style.visibility = "hidden";
   randomwords();
   Haragduulah();
+  document.getElementById("audio").play();
 }
 
+LoseButton.addEventListener("click", function () {
+  startGame();
+});
+
+WinButton.addEventListener("click", function () {
+  startGame();
+});
+console.log(pickedWord);
 startGame();

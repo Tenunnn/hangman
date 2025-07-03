@@ -6,10 +6,10 @@
 #Vsegnuud {
   display: flex;
   flex-wrap: wrap;
-  width: 300px;
+  width: 400px;
   position: absolute;
   left: 1000px;
-  bottom: 200px;
+  bottom: 120px;
 }
 #randoms {
   display: flex;
@@ -30,7 +30,7 @@
 }
 #pic1 {
   position: absolute;
-  left: 980px;
+  left: 1050px;
   bottom: 600px;
   height: 350px;
 }
@@ -38,6 +38,11 @@
   position: absolute;
   left: 1100px;
   bottom: 430px;
+  font-size: 30px;
+  border: 6px solid black;
+  border-radius: 4px;
+  height: 40px;
+  width: 100px;
 }
 #gameOver {
   background: rgba(0, 0, 0, 0.5);
@@ -84,4 +89,7 @@
   background-color: aquamarine;
   width: 100px;
   height: 30px;
+}
+#audio {
+  position: absolute;
 }
